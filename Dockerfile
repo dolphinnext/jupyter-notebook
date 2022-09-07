@@ -1,5 +1,5 @@
-FROM jupyter/datascience-notebook:r-4.0.3
-
+#FROM jupyter/datascience-notebook:r-4.0.3
+FROM jupyter/datascience-notebook:r-4.1.3
 COPY custom.js /home/jovyan/.jupyter/custom/custom.js
 
 #RUN echo "c.NotebookApp.tornado_settings = { 'headers': {'X-Frame-Options': 'ALLOWALL'}}" >> /home/jovyan/.jupyter/jupyter_notebook_config.py 
